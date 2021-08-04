@@ -1,0 +1,43 @@
+*{ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   z-index: index;
+}
+.quesPaper {
+    box-sizing: content-box;
+    position: relative;
+    max-height: 450px;
+    max-width: 600px;
+    text-align: center;
+    border: 3px solid black;
+    margin: 100px 300px;
+    background-color: rgb(84, 56, 107);
+    color: cornsilk;
+    z-index: index 60;
+   display: none;
+}
+#startContest{
+    border: 2.5px dotted black;
+    text-align: center;
+}
+table{
+    position: static;
+
+    margin-left: 90px;
+    margin-bottom: 30px;
+    text-align: center;
+    
+}
+button{
+    height: 35px;
+    width: 200px;
+    text-align: center;
+    
+    
+} 
+td,tr{
+    margin-left: 90px;
+    padding: 5px;
+    
+}
