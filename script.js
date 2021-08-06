@@ -58,10 +58,10 @@ dashOpt1,dashOpt2,dashOpt3,dashOpt4*/
 
 function scanAns(id) {
     let opt = myQues[n];
-    function scan(a,b,c,d) {
+    function scan() {
 
 
-        if (opt.trueAns == d) {
+        if (opt.trueAns == "a" ) {
             return dashOpt1.style.backgroundColor = "green";
 
         }
