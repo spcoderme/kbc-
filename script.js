@@ -56,46 +56,80 @@ dashOpt4 = document.getElementById("optionFour");
 dashOpt1,dashOpt2,dashOpt3,dashOpt4*/
 
 
-function scanAns(id) {
+function scanAns(chaeak) {
     let opt = myQues[n];
-    function scan() {
-
-
-        if (opt.trueAns == "a" ) {
-            return dashOpt1.style.backgroundColor = "green";
-
-        }
-        else {
-            return dashOpt1.style.backgroundColor = "red";
-        }
-
-    };
-    switch (id) {
-        case id = dashOpt1:
+    
+    switch (chaeak) {
+        case chaeak = dashOpt1:
             dashOpt1.style.backgroundColor = "yellow";
 
             setTimeout(scan, 3000);
+            function scan() {
 
+
+                if (opt.trueAns === "a" ) {
+                    return dashOpt1.style.backgroundColor = "green";
+        
+                }
+                else {
+                    return dashOpt1.style.backgroundColor = "red";
+                }
+        
+            };
+            
 
             break;
-        case id = dashOpt2:
+        case chaeak = dashOpt2:
             dashOpt2.style.backgroundColor = "yellow";
 
-            setTimeout(scan, 3000);
+            setTimeout(scan2, 3000);
+            function scan2() {
 
+
+                if (opt.trueAns === "b") {
+                    return dashOpt2.style.backgroundColor = "green";
+        
+                }
+                else {
+                    return dashOpt2.style.backgroundColor = "red";
+                }
+        
+            };
 
             break;
-        case id = dashOpt3:
+        case chaeak = dashOpt3:
             dashOpt3.style.backgroundColor = "yellow";
 
-            setTimeout(scan, 3000);
+            setTimeout(scan3, 3000);
+            function scan3() {
 
+
+                if (opt.trueAns === "c") {
+                    return dashOpt3.style.backgroundColor = "green";
+        
+                }
+                else {
+                    return dashOpt3.style.backgroundColor = "red";
+                }
+        
+            };
 
             break;
-        case id = dashOpt4:
+        case chaeak = dashOpt4:
             dashOpt4.style.backgroundColor = "yellow";
-            setTimeout(scan, 3000);
+            setTimeout(scan4, 3000);
+            function scan4() {
 
+
+                if (opt.trueAns === "d" ) {
+                    return dashOpt4.style.backgroundColor = "green";
+        
+                }
+                else {
+                    return dashOpt4.style.backgroundColor = "red";
+                }
+        
+            }; 
 
 
             break;
