@@ -9,14 +9,21 @@ dashOpt3 = document.getElementById("optionThree");
 var dashOpt4;
 dashOpt4 = document.getElementById("optionFour");
 
-var n = Math.floor(Math.random() * 15);
+var n ;
+ for (let i = 0; i < 15; i++) {
+    n = i
+    
+    
+
+};
 
 
 
 
 
 function genrateQues() {
-    var n = Math.floor(Math.random() * 15);
+
+
 
     let opt = myQues[n].answers;
     // let op2 = myQues[n].answers.b;
@@ -58,7 +65,7 @@ dashOpt1,dashOpt2,dashOpt3,dashOpt4*/
 
 function scanAns(chaeak) {
     let opt = myQues[n];
-    
+
     switch (chaeak) {
         case chaeak = dashOpt1:
             dashOpt1.style.backgroundColor = "yellow";
@@ -67,16 +74,16 @@ function scanAns(chaeak) {
             function scan() {
 
 
-                if (opt.trueAns === "a" ) {
+                if (opt.trueAns === "a") {
                     return dashOpt1.style.backgroundColor = "green";
-        
+
                 }
                 else {
                     return dashOpt1.style.backgroundColor = "red";
                 }
-        
+
             };
-            
+
 
             break;
         case chaeak = dashOpt2:
@@ -88,12 +95,12 @@ function scanAns(chaeak) {
 
                 if (opt.trueAns === "b") {
                     return dashOpt2.style.backgroundColor = "green";
-        
+
                 }
                 else {
                     return dashOpt2.style.backgroundColor = "red";
                 }
-        
+
             };
 
             break;
@@ -106,12 +113,12 @@ function scanAns(chaeak) {
 
                 if (opt.trueAns === "c") {
                     return dashOpt3.style.backgroundColor = "green";
-        
+
                 }
                 else {
                     return dashOpt3.style.backgroundColor = "red";
                 }
-        
+
             };
 
             break;
@@ -121,22 +128,22 @@ function scanAns(chaeak) {
             function scan4() {
 
 
-                if (opt.trueAns === "d" ) {
+                if (opt.trueAns === "d") {
                     return dashOpt4.style.backgroundColor = "green";
-        
+
                 }
                 else {
                     return dashOpt4.style.backgroundColor = "red";
-                }
-        
-            }; 
+                };
+
+            };
 
 
             break;
 
-    }
+    };
 
 
 
-}
+};
 
