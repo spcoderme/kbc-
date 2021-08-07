@@ -9,21 +9,19 @@ dashOpt3 = document.getElementById("optionThree");
 var dashOpt4;
 dashOpt4 = document.getElementById("optionFour");
 
-var n ;
- for (let i = 0; i < 15; i++) {
-    n = i
-    
-    
-
+function incre() {
+    n = 0 && n <= 15;
+    n++;
+    ++n;
+    myQues[n];
 };
-
 
 
 
 
 function genrateQues() {
 
-
+    
 
     let opt = myQues[n].answers;
     // let op2 = myQues[n].answers.b;
@@ -45,6 +43,7 @@ function myFun() {
 function callBoth() {
     genrateQues();
     myFun();
+    incre();
     dashOpt1.style.backgroundColor = "#fff";
     dashOpt2.style.backgroundColor = "#fff";
     dashOpt3.style.backgroundColor = "#fff";
