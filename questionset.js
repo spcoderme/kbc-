@@ -2,7 +2,7 @@
 const myQues = [
     {
         question: " Who invented the Light Bulb?",
-        answers: { a: "Thomas Alva Edison", b: "arya bhatt", c: "Alexander Fleming", d: "Alexander Graham Bell" },
+        answers: { a: "Thomas Alva Edison", b: "The Wright Brothers", c: "Alexander Fleming", d: "Alexander Graham Bell" },
         trueAns: 'a'
     },
     {
@@ -12,22 +12,22 @@ const myQues = [
     },
     {
         question: "What is the name of the biggest planet in our solar system?",
-        answers: { a: "Jupiter", b: "Mars", c: "Venus", d: "Mercury"},
+        answers: { a: "Jupiter", b: "Saturn", c: "Earth", d: "Titan"},
         trueAns: 'a'
     },
     {
         question: " Who invented the Telephone?",
-        answers: { a: "Thomas Alva Edison", b: "Alexander Graham Bell", c: "Alexander Fleming", d: "The Wright Brothers" },
+        answers: { a: "Louise Phillipe", b: "Alexander Graham Bell", c: "Alexander Fleming", d: "The Wright Brothers" },
         trueAns: 'b'
     },
     {
         question: " Who discovered Penicillin?",
-        answers: { a: "The Wright Brothers", b: "arya bhatt", c: "Alexander Fleming", d: "Johannes Gutenberg" },
+        answers: { a: "The Wright Brothers", b: "Arya Bhatt", c: "Alexander Fleming", d: "Johannes Gutenberg" },
         trueAns: 'c'
     },
     {
         question: " Which is the hottest planet in our solar system?",
-        answers: {a: "Jupiter", b: "Mars", c: "Venus", d: "Mercury" },
+        answers: {a: "Earth", b: "Mars", c: "Venus", d: "Jupiter" },
         trueAns: 'c'
     },
 {
@@ -37,7 +37,7 @@ const myQues = [
     },
     {
         question: " Who invented the Printing Press?",
-        answers: { a: "Johannes Gutenberg", b: "arya bhatt", c: "Alexander Fleming", d: "The Wright Brothers" },
+        answers: { a: "Johannes Gutenberg", b: "Arya Bhatt", c: "Alexander Fleming", d: "The Wright Brothers" },
         trueAns: 'a'
     },
     {
@@ -57,7 +57,7 @@ const myQues = [
     },
     {
         question: " French scientist Louis Pasteur famous for?",
-        answers: { a: "Maleria", b: "vaccination", c: "Antiseptic", d: "AIDS" },
+        answers: { a: "Maleria", b: "Vaccination", c: "Antiseptic", d: "AIDS" },
         trueAns: 'b'
     },
     {
@@ -72,7 +72,7 @@ const myQues = [
     },
     {
         question: " Who are the founders of Google?",
-        answers: { a: "Charles Babbage", b: "Steave Jobs", c: "Charles Babbage", d: "Larry Page and Sergey Brin" },
+        answers: { a: "Charles Babbage", b: "Steave Jobs", c: "John Williams", d: "Larry & Brin" },
         trueAns: 'd'
     }
 ];
