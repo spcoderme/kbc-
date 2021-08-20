@@ -1,7 +1,7 @@
 let score = 0;
 function globalScore (){
       
-    document.getElementById("pnt").innerHTML = score ; 
+    document.getElementById("pnt").innerHTML = "Rs."+ score ; 
 }
 var dashQues;
 dashQues = document.getElementById("quk")
@@ -15,10 +15,14 @@ var dashOpt4;
 dashOpt4 = document.getElementById("optionFour");
 var n = 0;
 function nextQue() {
+    
     if (n < myQues.length) {
-        return n++;
+        n++;
+        return callBoth();
     } else {
-        callBoth();
+        
+        return n = 0;
+        
     }
 
 
@@ -28,37 +32,12 @@ function genrateQues() {
 
     let opt = myQues[n].answers;
 
-
-
-
-
     dashQues.innerHTML = myQues[n].question;
     dashOpt1.innerHTML = opt.a;
     dashOpt2.innerHTML = opt.b;
     dashOpt3.innerHTML = opt.c;
     dashOpt4.innerHTML = opt.d;
 
-
-
-
-
-
-
-
-
-
-
-    /*var dashQues;
-    dashQues = document.getElementById("quk")
-    var dashOpt1;
-    dashOpt1 = document.getElementById("optionOne");
-    var dashOpt2;
-    dashOpt2 = document.getElementById("optionTwo");
-    var dashOpt3;
-    dashOpt3 = document.getElementById("optionThree");
-    var dashOpt4;
-    dashOpt4 = document.getElementById("optionFour");
-    dashOpt1,dashOpt2,dashOpt3,dashOpt4*/
 
 }
 
@@ -93,11 +72,13 @@ function scanAns(id) {
                 if (myQues[n].trueAns == 'a') {
                     score += 1000;
                     globalScore();
+                    
                     return dashOpt1.style.backgroundColor = "green";
 
                 }
                 else {
                     score -= 500;
+                    
                     globalScore();
                     return dashOpt1.style.backgroundColor = "red";
                 }
@@ -116,12 +97,14 @@ function scanAns(id) {
                 if (myQues[n].trueAns == 'b') {
                     score += 1000;
                     globalScore();
+                    
                     return dashOpt2.style.backgroundColor = "green";
 
                 }
                 else {
                     score -= 500;
                     globalScore();
+                    
                     return dashOpt2.style.backgroundColor = "red";
                 }
 
@@ -138,6 +121,7 @@ function scanAns(id) {
                 if (myQues[n].trueAns == 'c') {
                     score += 1000;
                     globalScore();
+                    
                     return dashOpt3.style.backgroundColor = "green";
 
                 }
@@ -159,6 +143,7 @@ function scanAns(id) {
                 if (myQues[n].trueAns == 'd') {
                     score += 1000;
                     globalScore();
+                    
                     return dashOpt4.style.backgroundColor = "green";
 
                 }
